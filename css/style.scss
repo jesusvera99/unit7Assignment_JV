@@ -12,6 +12,7 @@ $verySmallText: 0.65em;
 $mediumLineHeight: 2em;
 $gridMin: 1024px;
 $gridMax: 1366px;
+$arial: 'Arial', Helvetica, sans-serif;
 
 * {
   padding: 0;
@@ -22,6 +23,7 @@ $gridMax: 1366px;
 
 .container {
   width: 100%;
+  background-color: $white;
   nav {
     background-color: $skyBlue;
     height: 94px;
@@ -85,6 +87,72 @@ $gridMax: 1366px;
           text-decoration: none;
           color: inherit;
           text-transform: uppercase;
+        }
+      }
+    }
+  }
+  #section1 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1em;
+
+    div {
+      width: 100%;
+    }
+
+    #section1-div1 {
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin-left: 1em;
+        width: 100%;
+      }
+    }
+    #section1-div2 {
+      margin-bottom: 1.5em;
+
+      h6 {
+        color: $gray;
+        font-family: $arial;
+        font-size: 1em;
+        margin: 1em 0 1em 0;
+      }
+      h1 {
+        font-family: $lageParaType;
+        font-weight: 100;
+        color: $skyBlue;
+        font-size: 2.5em;
+        margin-bottom: 1em;
+      }
+      button {
+        background: none;
+        color: $skyBlue;
+        border: 1px solid $lightBlue;
+        font-family: $arial;
+        padding: 1.5em 3em;
+        border-radius: 0.5em;
+      }
+    }
+  }
+
+  #section2 {
+    #section2-child {
+      #section-left {
+        background-color: $veryLightBlue;
+        padding: 2em;
+        h1 {
+          font-family: $lageParaType;
+          font-weight: 100;
+          color: $skyBlue;
+          font-size: 2.5em;
+          margin-bottom: 1em;
+        }
+        p {
+          font-family: $arial;
+          color: $skyBlue;
+          font-size: 1em;
+          line-height: 2em;
         }
       }
     }
