@@ -4,6 +4,7 @@ $gray: #7f7f7f;
 $monserrat: 'Monserrat', sans-serif;
 $roboto: 'Roboto', sans-serif;
 $lightBlue: #bce0fd;
+$lightGray: #cccccc;
 $lageParaType: 'Georgia', 'Times New Roman', Times, serif;
 $largeParaSize: 40px;
 $veryLightBlue: #f1f9ff;
@@ -153,6 +154,59 @@ $arial: 'Arial', Helvetica, sans-serif;
           color: $skyBlue;
           font-size: 1em;
           line-height: 2em;
+        }
+      }
+
+      #section-right {
+        display: flex;
+        flex-direction: column;
+        img {
+          padding: 0.5em 1em;
+        }
+      }
+    }
+  }
+  #cards {
+    .section3 {
+      width: 100%;
+      padding: 0.5em 1.5em;
+      .section3-sections {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 0.5em;
+        }
+        h3 {
+          font-family: $arial;
+          color: $skyBlue;
+          font-size: 0.5em;
+        }
+        span {
+          margin-left: auto;
+          font-family: $arial;
+          color: $lightGray;
+          font-size: 0.5em;
+        }
+      }
+      p {
+        margin-top: 2em;
+        color: $lightGray;
+        font-family: $arial;
+        font-size: 0.75em;
+        line-height: 1.5em;
+      }
+      img.profiles {
+        margin-top: 2em;
+        width: 100%;
+      }
+      #footer {
+        display: flex;
+        margin-top: 2em;
+        h3 {
+          margin-left: auto;
+          color: $skyBlue;
+          font-family: $arial;
+          font-size: 0.75em;
         }
       }
     }
