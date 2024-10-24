@@ -109,8 +109,10 @@
   padding: 1.5em 3em;
   border-radius: 0.5em;
 }
-.container #section2 #section2-child #section-left {
+.container #section2 #section2-child {
   background-color: #f1f9ff;
+}
+.container #section2 #section2-child #section-left {
   padding: 2em;
 }
 .container #section2 #section2-child #section-left h1 {
@@ -316,10 +318,69 @@
   .container #mobile-nav {
     display: none;
   }
-  .container #section1 {
-    padding: 5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  section#section1 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  section#section-left {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .container section#section2 section#section2-child section#section-right {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0;
+    grid-template-areas: "one two three" "four five six" "seven seven six";
+  }
+  .container section#section2 section#section2-child section#section-right img {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(1) {
+    grid-area: one;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(2) {
+    grid-area: two;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(3) {
+    grid-area: three;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(4) {
+    grid-area: four;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(5) {
+    grid-area: five;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(6) {
+    grid-area: six;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(7) {
+    grid-area: seven;
+  }
+  section#cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 3em auto;
+  }
+  div#section-five-div p {
+    width: 60%;
+  }
+  .container #section-five #section-five-div #section-five-div-div {
+    flex-direction: row;
+  }
+  .container #section-five #section-five-div #section-five-div-div .section-five-div-div-section {
+    padding: 1.5em;
+  }
+  .container #section-five #section-five-div #section-five-div-div .section-five-div-div-section:nth-child(2) {
+    margin: 0 1em;
   }
 }/*# sourceMappingURL=style.css.map */
