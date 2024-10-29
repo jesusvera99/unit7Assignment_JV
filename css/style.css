@@ -383,4 +383,83 @@
   .container #section-five #section-five-div #section-five-div-div .section-five-div-div-section:nth-child(2) {
     margin: 0 1em;
   }
+}
+@media screen and (min-width: 1025px) and (max-width: 1800px) {
+  .container nav {
+    padding: 0 4em;
+  }
+  .container #section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .container #section1 #section1-div2 {
+    padding-bottom: 50%;
+  }
+  .container #section2 #section2-child {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+  .container #section2 #section2-child #section-left {
+    width: 50%;
+    font-size: 0.75em;
+  }
+  .container section#section2 section#section2-child section#section-right {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0;
+    grid-template-areas: "one two three" "four five six" "seven seven six";
+  }
+  .container section#section2 section#section2-child section#section-right img {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(1) {
+    grid-area: one;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(2) {
+    grid-area: two;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(3) {
+    grid-area: three;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(4) {
+    grid-area: four;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(5) {
+    grid-area: five;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(6) {
+    grid-area: six;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(7) {
+    grid-area: seven;
+  }
+  section#cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    padding: 5em 0 5em 2em;
+  }
+  .container #section-five #section-five-div h1 {
+    width: 70%;
+  }
+  .container #section-five #section-five-div p#section-five-div-p1 {
+    width: 70%;
+  }
+  .container #section-five #section-five-div #section-five-div-p2 {
+    width: 70%;
+  }
+  .container #section-five #section-five-div #section-five-div-div {
+    width: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */
