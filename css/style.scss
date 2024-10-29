@@ -371,7 +371,7 @@ $arial: 'Arial', Helvetica, sans-serif;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
   section#section1 {
     width: 70%;
     margin: 0 auto;
@@ -451,7 +451,7 @@ $arial: 'Arial', Helvetica, sans-serif;
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1800px) {
+@media screen and (min-width: 1024px) and (max-width: 1800px) {
   .container nav {
     padding: 0 4em;
   }
@@ -533,6 +533,7 @@ $arial: 'Arial', Helvetica, sans-serif;
     padding: 5em 0 5em 2em;
   }
 
+  //Struggles to line things up in this section - all code below TBD
   .container #section-five #section-five-div h1 {
     width: 70%;
   }
@@ -546,5 +547,8 @@ $arial: 'Arial', Helvetica, sans-serif;
 
   .container #section-five #section-five-div #section-five-div-div {
     width: 30%;
+    position: relative;
+    left: 70%;
+    bottom: 300px;
   }
 }
