@@ -623,12 +623,8 @@ $arial: 'Arial', Helvetica, sans-serif;
   footer {
     display: grid;
     grid-template-columns: 15% 25% 40% 20%;
-    // grid-template-rows: repeat(4);
-    // align-items: center;
 
-    grid-template-areas:
-      'one two three four'
-      'five six seven eight';
+    grid-template-areas: 'one two three four';
   }
   .container footer form {
     width: 50%;
@@ -650,13 +646,25 @@ $arial: 'Arial', Helvetica, sans-serif;
   .container footer section ul:last-child {
     grid-area: two;
   }
-  .container footer p {
+
+  .container div.form {
     grid-area: three;
-    padding-bottom: 20px;
+    margin-top: auto;
+
+    p {
+      margin-right: 5em;
+    }
+    form {
+      margin-top: 1em;
+    }
   }
-  .container footer form {
-    grid-area: three;
-  }
+  // .container footer p {
+  //   grid-area: three;
+  //   padding-bottom: 20px;
+  // }
+  // .container footer form {
+  //   grid-area: three;
+  // }
   .container footer address {
     grid-area: four;
     display: flex;

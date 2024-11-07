@@ -502,7 +502,7 @@
   footer {
     display: grid;
     grid-template-columns: 15% 25% 40% 20%;
-    grid-template-areas: "one two three four" "five six seven eight";
+    grid-template-areas: "one two three four";
   }
   .container footer form {
     width: 50%;
@@ -524,12 +524,15 @@
   .container footer section ul:last-child {
     grid-area: two;
   }
-  .container footer p {
+  .container div.form {
     grid-area: three;
-    padding-bottom: 20px;
+    margin-top: auto;
   }
-  .container footer form {
-    grid-area: three;
+  .container div.form p {
+    margin-right: 5em;
+  }
+  .container div.form form {
+    margin-top: 1em;
   }
   .container footer address {
     grid-area: four;
