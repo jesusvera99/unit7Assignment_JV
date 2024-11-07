@@ -319,7 +319,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1023px) {
+@media screen and (min-width: 600px) and (max-width: 1365px) {
   section#section1 {
     width: 70%;
     margin: 0 auto;
@@ -383,8 +383,30 @@
   .container #section-five #section-five-div #section-five-div-div .section-five-div-div-section:nth-child(2) {
     margin: 0 1em;
   }
+  .container footer#footer form {
+    width: 60%;
+    margin-top: 1em;
+  }
+  .container footer#footer section {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .container footer#footer section ul {
+    width: 50%;
+  }
+  .container footer#footer section ul:last-child {
+    margin-left: 10em;
+  }
+  .container footer#footer address {
+    text-align: center;
+    margin-top: 2em;
+  }
+  .container footer#footer #footer-copy {
+    width: 100%;
+    text-align: center;
+  }
 }
-@media screen and (min-width: 1024px) and (max-width: 1800px) {
+@media screen and (min-width: 1366px) {
   .container nav {
     padding: 0 4em;
   }
@@ -450,20 +472,32 @@
     width: 90%;
     padding: 5em 0 5em 2em;
   }
-  .container #section-five #section-five-div h1 {
-    width: 70%;
+  .container #section-five {
+    padding: 8em 0;
   }
-  .container #section-five #section-five-div p#section-five-div-p1 {
+  .container #section-five #section-five-div {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
     width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   }
-  .container #section-five #section-five-div #section-five-div-p2 {
+  .container #section-five #section-five-div .five-div-one {
     width: 70%;
+    padding: 4em;
+  }
+  .container #section-five #section-five-div .five-div-one h1 {
+    margin: 0;
   }
   .container #section-five #section-five-div #section-five-div-div {
-    width: 30%;
-    position: relative;
-    left: 70%;
-    bottom: 300px;
+    height: 100%;
+  }
+  .container #section-five #section-five-div #section-five-div-div .section-five-div-div-section {
+    margin: 0;
+    height: 33.3%;
+    width: 100%;
   }
   footer {
     display: grid;
